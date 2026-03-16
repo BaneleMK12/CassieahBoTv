@@ -14,7 +14,7 @@ export const meta: CommandMeta = {
   permissions: [0],
   noPrefix: false,
   waitingTime: 1,
-  otherNames: ["box", "bx", "vt"],
+  otherNames: ["box", "bx", "vlt"],
   shopPrice: 10000,
   requirement: "3.0.0",
   icon: "🗃️",
