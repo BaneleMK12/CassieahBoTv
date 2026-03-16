@@ -1,6 +1,7 @@
 // @ts-check
 /**
  * @type {CommandMeta}
+
  */
 export const meta = {
   name: "mine",
