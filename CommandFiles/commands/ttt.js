@@ -1,5 +1,6 @@
 // @ts-check
 /**
+
  * @type {CommandMeta}
  */
 export const meta = {
