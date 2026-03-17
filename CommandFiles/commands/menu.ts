@@ -139,7 +139,7 @@ export async function entry({
 
     result += `\n${UNISpectra.arrow} Command details: **${prefix}${commandName} <command>**\n`;
 
-    const resultStr = `🔍 | **Available Commands** 🧰 (${commands.size})\n\n${result}${UNISpectra.charm} Developed by @**Liane Cagara** 🎀`;
+    const resultStr = `🔍 | **Available Commands** 🧰 (${commands.size})\n\n${result}${UNISpectra.charm} Developed by @**Liane Cagara** & @**Charles MK**🎀`;
     return output.reply(resultStr);
   } else if (
     String(args[0]).toLowerCase() === "search" ||
@@ -284,7 +284,7 @@ export async function entry({
       `${UNISpectra.arrowFromT} Try to ***Explore*** more commands!`,
       `${UNISpectra.arrowFromT} View by page: **${prefix}${commandName} <page>**`,
       `${UNISpectra.arrowFromT} View all: **${prefix}${commandName} all**`,
-      `${UNISpectra.charm} Developed by @**Liane Cagara** 🎀`,
+      `${UNISpectra.charm} Developed by @**Liane Cagara** & @**Charles MK**🎀`,
     ].join("\n");
     if (1) {
       return output.replyStyled(strs, {
@@ -334,52 +334,52 @@ export async function entry({
           str.push(`╭─── ${cmdIcon} **${toTitleCase(name)}** ───
 │   📜 **Name**:
 │   ${UNISpectra.charm} ${name}
-│ 
-│   💬 **Description**: 
+│
+│   💬 **Description**:
 │   ${UNISpectra.charm} ${description}
-│ 
-│   📝 **Aliases**: 
+│
+│   📝 **Aliases**:
 │   ${UNISpectra.charm} ${otherNames.length ? otherNames.join(", ") : "None"}
-│   
+│
 │   🔎 See **${prefix}${cmdn} ${name}** for more info.
 ╰────────────────`);
         } else {
           str.push(`╭─── ${cmdIcon} **${toTitleCase(name)}** ───
 │   📜 **Name**:
 │   ${UNISpectra.charm} ${name}
-│ 
-│   💬 **Description**: 
+│
+│   💬 **Description**:
 │   ${UNISpectra.charm} ${description}
-│ 
-│   📝 **Aliases**: 
+│
+│   📝 **Aliases**:
 │   ${UNISpectra.charm} ${otherNames.length ? otherNames.join(", ") : "None"}
-│ 
+│
 │   🛠️ **Usage**:
 │   ${UNISpectra.charm} ${usage
             .replace(/{prefix}/g, prefix)
             .replace(/{name}/g, name)}
-│ 
+│
 │   📁 **Category**:
 │   ${UNISpectra.charm} ${category}
-│ 
+│
 │   🔐 **Permissions**:
 │   ${UNISpectra.charm} ${typeof role === "number" ? role : "None required"}
-│ 
+│
 │   ⏳ **Cooldown**:
-│   ${UNISpectra.charm} ${waitingTime} 
-│ 
-│   ✍️ **Author**: 
+│   ${UNISpectra.charm} ${waitingTime}
+│
+│   ✍️ **Author**:
 │   ${UNISpectra.charm} ${author}
-│ 
+│
 │   💸 **Price**:
 │   ${UNISpectra.charm} ${shopPrice ? `$${shopPrice} ${status}` : "⚡ Free"}
-│ 
+│
 │   🖼️ **Icon**:
 │   ${UNISpectra.charm} ${cmdIcon}
-│ 
+│
 │   📌 **Version**:
 │   ${UNISpectra.charm} ${version}
-│ 
+│
 │   🛡️ **Requirement**:
 │   ${UNISpectra.charm} ${requirement}
 ╰────────────────`);
@@ -488,7 +488,7 @@ export async function entry({
     }**\n`;
     result += `${UNISpectra.arrow} Command details: **${prefix}${commandName} <command>**\n`;
 
-    const resultStr = `🔍 | **Available Commands** 🧰 (${commands.size})\n\n${result}${UNISpectra.charm} Developed by @**Liane Cagara** 🎀`;
+    const resultStr = `🔍 | **Available Commands** 🧰 (${commands.size})\n\n${result}${UNISpectra.charm} Developed by @**Liane Cagara** & @**Charles MK**🎀`;
     return output.reply(resultStr);
   } else {
     const basicCommandsOld = {
@@ -555,7 +555,7 @@ export async function entry({
       `${UNISpectra.arrowFromT} View by page: **${prefix}${commandName} <page>**`,
       `${UNISpectra.arrowFromT} View the basics: **${prefix}${commandName} basics**`,
 
-      `${UNISpectra.disc} Developed by @**Liane Cagara**,maintained+improved by @**Charles MK** 🎀`,
+      `${UNISpectra.disc} Developed by @**Liane Cagara** & @**Charles MK**🎀`,
     ].join("\n");
     if (1) {
       return output.replyStyled(strs, {
